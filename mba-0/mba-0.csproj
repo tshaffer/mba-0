@@ -79,5 +79,6 @@
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
+  <Import Project="..\..\BAModel\BAModel\BAModel.projitems" Label="Shared" Condition="Exists('..\..\BAModel\BAModel\BAModel.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

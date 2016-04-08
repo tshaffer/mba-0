@@ -4,6 +4,8 @@ using AppKit;
 using Foundation;
 using System.Diagnostics;
 
+using BAModel;
+
 namespace mba0
 {
 	public partial class ViewController : NSViewController
@@ -46,13 +48,9 @@ namespace mba0
 
 		private void OpenPresentation(string filePath)
 		{
+			Console.WriteLine ("presentation file path is: " + filePath);
 
-			var alert = new NSAlert () {
-				AlertStyle = NSAlertStyle.Informational,
-				InformativeText = filePath,
-				MessageText = "Presentation File Selected"
-			};
-			alert.RunModal ();
+			Sign sign = new Sign ("fred");
 
 		}
 

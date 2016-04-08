@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mba-0", "mba-0\mba-0.csproj", "{524EC498-782C-436E-97F8-AFA75C76C844}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BAModel", "..\BAModel\BAModel\BAModel.shproj", "{A06BF8FB-0031-490B-B6B3-07D56780DAD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

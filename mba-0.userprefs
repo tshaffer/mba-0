@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="mba-0/ViewController.cs">
     <Files>
-      <File FileName="mba-0/ViewController.cs" Line="27" Column="30" />
-      <File FileName="../FirmwareXMLGen/FirmwareXMLGen/ViewController.cs" Line="43" Column="1" />
-      <File FileName="mba-0/AppDelegate.cs" Line="18" Column="1" />
+      <File FileName="mba-0/ViewController.cs" Line="50" Column="1" />
+      <File FileName="../FirmwareXMLGen/FirmwareXMLGen/ViewController.cs" Line="44" Column="1" />
+      <File FileName="mba-0/AppDelegate.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
