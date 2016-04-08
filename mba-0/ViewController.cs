@@ -2,6 +2,7 @@
 
 using AppKit;
 using Foundation;
+using System.Diagnostics;
 
 namespace mba0
 {
@@ -27,5 +28,33 @@ namespace mba0
 				// Update the view, if already loaded.
 			}
 		}
+
+		[Export ("openDocument:")]
+		void OpenDialog (NSObject sender)
+		{
+			var dlg = NSOpenPanel.OpenPanel;
+			dlg.Message = "Open Presentation";
+			dlg.CanChooseFiles = true;
+			dlg.CanChooseDirectories = false;
+			dlg.AllowedFileTypes = new string[] {"bpf"};
+
+			if (dlg.RunModal () == 1) {
+				string presentationFilePath = dlg.Urls [0].Path;
+				OpenPresentation (presentationFilePath);
+			}
+		}
+
+		private void OpenPresentation(string filePath)
+		{
+
+			var alert = new NSAlert () {
+				AlertStyle = NSAlertStyle.Informational,
+				InformativeText = filePath,
+				MessageText = "Presentation File Selected"
+			};
+			alert.RunModal ();
+
+		}
+
 	}
 }
